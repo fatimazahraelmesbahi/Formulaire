@@ -44,13 +44,12 @@ namespace Formulaire
 
         private void button2_Click(object sender, EventArgs e)//delete
         {
-           
-           
             try
             {
                 using (SqlConnection cnx = new SqlConnection(connexionString))
                 {
-                    SqlCommand cmd = new SqlCommand("delete from Personne where Id_personne=" + txt_id.Text + "");
+                    string q = "delete from Personne where Id_personne = " + input_id.Text + ";";
+                    SqlCommand cmd = new SqlCommand(q, cnx);
                     cnx.Open();
                     cmd.Connection = cnx;
                     cmd.ExecuteNonQuery();
@@ -72,7 +71,7 @@ namespace Formulaire
             {
                 using (SqlConnection cnx = new SqlConnection(connexionString))
                 {
-                    String Query = " Update Personne set Age= '" + txt_age.Text + "','"+ "'Prenom ='" + txt_prenom.Text + "','" + "Nom =" + txt_nom.Text +"','" + " 'where Id_personne='" + txt_id.Text + "'";
+                    String Query = " Update Personne set Age= '" + input_age.Text + "','"+ "'Prenom ='" + input_prenom.Text + "','" + "'Nom ='" + input_nom.Text +"'," + " 'where Id_personne='" + input_id.Text + "'";
                     SqlCommand cmd = new SqlCommand(Query, cnx);
                     cnx.Open();
                     cmd.ExecuteNonQuery();
@@ -108,8 +107,6 @@ namespace Formulaire
             {
                 using (SqlConnection cnx = new SqlConnection(connexionString))
                 {
-
-
                     String Query = "insert into Personne(Id_personne,Nom,Prenom,Age) values('" + input_id.Text + "','" + input_nom.Text + "','" +input_prenom.Text + "','"+ input_age.Text  + "') ";
                     SqlCommand cmd = new SqlCommand(Query, cnx);
                     if (cnx.State == ConnectionState.Open)
@@ -131,6 +128,9 @@ namespace Formulaire
             }
         }
 
-       
+        private void btn_enregister_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

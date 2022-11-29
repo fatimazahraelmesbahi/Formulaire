@@ -45,7 +45,7 @@
             this.input_age = new System.Windows.Forms.TextBox();
             this.input_prenom = new System.Windows.Forms.TextBox();
             this.input_nom = new System.Windows.Forms.TextBox();
-            this.btn_enregister = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -58,11 +58,10 @@
             this.Nom,
             this.Prenom,
             this.Age});
-            this.dataGridView1.Location = new System.Drawing.Point(93, 248);
+            this.dataGridView1.Location = new System.Drawing.Point(93, 258);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(642, 180);
+            this.dataGridView1.Size = new System.Drawing.Size(604, 180);
             this.dataGridView1.TabIndex = 0;
-            
             // 
             // Id_personne
             // 
@@ -86,48 +85,60 @@
             // 
             // btn_search
             // 
-            this.btn_search.Location = new System.Drawing.Point(620, 19);
+            this.btn_search.BackColor = System.Drawing.Color.SlateBlue;
+            this.btn_search.Font = new System.Drawing.Font("Microsoft Uighur", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_search.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btn_search.Location = new System.Drawing.Point(620, 55);
             this.btn_search.Name = "btn_search";
-            this.btn_search.Size = new System.Drawing.Size(77, 36);
+            this.btn_search.Size = new System.Drawing.Size(106, 36);
             this.btn_search.TabIndex = 1;
-            this.btn_search.Text = "Search";
-            this.btn_search.UseVisualStyleBackColor = true;
+            this.btn_search.Text = "Chercher";
+            this.btn_search.UseVisualStyleBackColor = false;
             this.btn_search.Click += new System.EventHandler(this.button1_Click);
             // 
             // btn_insert
             // 
-            this.btn_insert.Location = new System.Drawing.Point(620, 61);
+            this.btn_insert.BackColor = System.Drawing.Color.SlateBlue;
+            this.btn_insert.Font = new System.Drawing.Font("Microsoft Uighur", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_insert.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btn_insert.Location = new System.Drawing.Point(620, 97);
             this.btn_insert.Name = "btn_insert";
-            this.btn_insert.Size = new System.Drawing.Size(77, 38);
+            this.btn_insert.Size = new System.Drawing.Size(106, 38);
             this.btn_insert.TabIndex = 2;
-            this.btn_insert.Text = "Insert";
-            this.btn_insert.UseVisualStyleBackColor = true;
+            this.btn_insert.Text = "Ajouter";
+            this.btn_insert.UseVisualStyleBackColor = false;
             this.btn_insert.Click += new System.EventHandler(this.btn_insert_Click);
             // 
             // btn_update
             // 
-            this.btn_update.Location = new System.Drawing.Point(620, 149);
+            this.btn_update.BackColor = System.Drawing.Color.SlateBlue;
+            this.btn_update.Font = new System.Drawing.Font("Microsoft Uighur", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_update.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btn_update.Location = new System.Drawing.Point(620, 183);
             this.btn_update.Name = "btn_update";
-            this.btn_update.Size = new System.Drawing.Size(77, 38);
+            this.btn_update.Size = new System.Drawing.Size(106, 38);
             this.btn_update.TabIndex = 3;
-            this.btn_update.Text = "Update";
-            this.btn_update.UseVisualStyleBackColor = true;
+            this.btn_update.Text = "Modifier";
+            this.btn_update.UseVisualStyleBackColor = false;
             this.btn_update.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // btn_delete
             // 
-            this.btn_delete.Location = new System.Drawing.Point(620, 105);
+            this.btn_delete.BackColor = System.Drawing.Color.SlateBlue;
+            this.btn_delete.Font = new System.Drawing.Font("Microsoft Uighur", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_delete.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btn_delete.Location = new System.Drawing.Point(620, 141);
             this.btn_delete.Name = "btn_delete";
-            this.btn_delete.Size = new System.Drawing.Size(77, 38);
+            this.btn_delete.Size = new System.Drawing.Size(106, 38);
             this.btn_delete.TabIndex = 4;
-            this.btn_delete.Text = "Delete";
-            this.btn_delete.UseVisualStyleBackColor = true;
+            this.btn_delete.Text = "Supprimer";
+            this.btn_delete.UseVisualStyleBackColor = false;
             this.btn_delete.Click += new System.EventHandler(this.button2_Click);
             // 
             // txt_id
             // 
             this.txt_id.AutoSize = true;
-            this.txt_id.Location = new System.Drawing.Point(90, 35);
+            this.txt_id.Location = new System.Drawing.Point(90, 79);
             this.txt_id.Name = "txt_id";
             this.txt_id.Size = new System.Drawing.Size(66, 13);
             this.txt_id.TabIndex = 5;
@@ -136,7 +147,7 @@
             // txt_nom
             // 
             this.txt_nom.AutoSize = true;
-            this.txt_nom.Location = new System.Drawing.Point(90, 80);
+            this.txt_nom.Location = new System.Drawing.Point(93, 115);
             this.txt_nom.Name = "txt_nom";
             this.txt_nom.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.txt_nom.Size = new System.Drawing.Size(29, 13);
@@ -146,7 +157,7 @@
             // txt_age
             // 
             this.txt_age.AutoSize = true;
-            this.txt_age.Location = new System.Drawing.Point(93, 177);
+            this.txt_age.Location = new System.Drawing.Point(93, 193);
             this.txt_age.Name = "txt_age";
             this.txt_age.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.txt_age.Size = new System.Drawing.Size(26, 13);
@@ -157,7 +168,7 @@
             // txt_prenom
             // 
             this.txt_prenom.AutoSize = true;
-            this.txt_prenom.Location = new System.Drawing.Point(90, 130);
+            this.txt_prenom.Location = new System.Drawing.Point(93, 159);
             this.txt_prenom.Name = "txt_prenom";
             this.txt_prenom.Size = new System.Drawing.Size(43, 13);
             this.txt_prenom.TabIndex = 8;
@@ -165,21 +176,21 @@
             // 
             // input_id
             // 
-            this.input_id.Location = new System.Drawing.Point(188, 35);
+            this.input_id.Location = new System.Drawing.Point(188, 79);
             this.input_id.Name = "input_id";
             this.input_id.Size = new System.Drawing.Size(192, 20);
             this.input_id.TabIndex = 9;
             // 
             // input_age
             // 
-            this.input_age.Location = new System.Drawing.Point(188, 174);
+            this.input_age.Location = new System.Drawing.Point(188, 193);
             this.input_age.Name = "input_age";
             this.input_age.Size = new System.Drawing.Size(192, 20);
             this.input_age.TabIndex = 10;
             // 
             // input_prenom
             // 
-            this.input_prenom.Location = new System.Drawing.Point(188, 130);
+            this.input_prenom.Location = new System.Drawing.Point(188, 159);
             this.input_prenom.Name = "input_prenom";
             this.input_prenom.Size = new System.Drawing.Size(192, 20);
             this.input_prenom.TabIndex = 11;
@@ -187,19 +198,23 @@
             // 
             // input_nom
             // 
-            this.input_nom.Location = new System.Drawing.Point(188, 80);
+            this.input_nom.Location = new System.Drawing.Point(188, 115);
             this.input_nom.Name = "input_nom";
             this.input_nom.Size = new System.Drawing.Size(192, 20);
             this.input_nom.TabIndex = 12;
             // 
-            // btn_enregister
+            // label1
             // 
-            this.btn_enregister.Location = new System.Drawing.Point(620, 193);
-            this.btn_enregister.Name = "btn_enregister";
-            this.btn_enregister.Size = new System.Drawing.Size(77, 38);
-            this.btn_enregister.TabIndex = 13;
-            this.btn_enregister.Text = "Confirm";
-            this.btn_enregister.UseVisualStyleBackColor = true;
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.label1.Font = new System.Drawing.Font("Microsoft Uighur", 48F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Red;
+            this.label1.Location = new System.Drawing.Point(252, -1);
+            this.label1.Name = "label1";
+            this.label1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label1.Size = new System.Drawing.Size(250, 75);
+            this.label1.TabIndex = 14;
+            this.label1.Text = "Formulaire";
             // 
             // Form1
             // 
@@ -208,7 +223,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.btn_enregister);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.input_nom);
             this.Controls.Add(this.input_prenom);
             this.Controls.Add(this.input_age);
@@ -249,7 +264,7 @@
         private System.Windows.Forms.TextBox input_age;
         private System.Windows.Forms.TextBox input_prenom;
         private System.Windows.Forms.TextBox input_nom;
-        private System.Windows.Forms.Button btn_enregister;
+        private System.Windows.Forms.Label label1;
     }
 }
 
