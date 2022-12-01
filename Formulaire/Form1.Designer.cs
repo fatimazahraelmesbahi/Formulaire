@@ -46,12 +46,15 @@
             this.input_prenom = new System.Windows.Forms.TextBox();
             this.input_nom = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.btn_saved = new System.Windows.Forms.Button();
+            this.btn_anuller = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
             // 
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Sunken;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Id_personne,
@@ -60,8 +63,9 @@
             this.Age});
             this.dataGridView1.Location = new System.Drawing.Point(93, 258);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(604, 180);
+            this.dataGridView1.Size = new System.Drawing.Size(491, 180);
             this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // Id_personne
             // 
@@ -101,7 +105,7 @@
             this.btn_insert.BackColor = System.Drawing.Color.SlateBlue;
             this.btn_insert.Font = new System.Drawing.Font("Microsoft Uighur", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_insert.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_insert.Location = new System.Drawing.Point(620, 97);
+            this.btn_insert.Location = new System.Drawing.Point(620, 105);
             this.btn_insert.Name = "btn_insert";
             this.btn_insert.Size = new System.Drawing.Size(106, 38);
             this.btn_insert.TabIndex = 2;
@@ -114,7 +118,7 @@
             this.btn_update.BackColor = System.Drawing.Color.SlateBlue;
             this.btn_update.Font = new System.Drawing.Font("Microsoft Uighur", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_update.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_update.Location = new System.Drawing.Point(620, 183);
+            this.btn_update.Location = new System.Drawing.Point(620, 215);
             this.btn_update.Name = "btn_update";
             this.btn_update.Size = new System.Drawing.Size(106, 38);
             this.btn_update.TabIndex = 3;
@@ -127,7 +131,7 @@
             this.btn_delete.BackColor = System.Drawing.Color.SlateBlue;
             this.btn_delete.Font = new System.Drawing.Font("Microsoft Uighur", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_delete.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_delete.Location = new System.Drawing.Point(620, 141);
+            this.btn_delete.Location = new System.Drawing.Point(620, 159);
             this.btn_delete.Name = "btn_delete";
             this.btn_delete.Size = new System.Drawing.Size(106, 38);
             this.btn_delete.TabIndex = 4;
@@ -216,6 +220,32 @@
             this.label1.TabIndex = 14;
             this.label1.Text = "Formulaire";
             // 
+            // btn_saved
+            // 
+            this.btn_saved.BackColor = System.Drawing.Color.SlateBlue;
+            this.btn_saved.Font = new System.Drawing.Font("Microsoft Uighur", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_saved.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btn_saved.Location = new System.Drawing.Point(620, 271);
+            this.btn_saved.Name = "btn_saved";
+            this.btn_saved.Size = new System.Drawing.Size(106, 38);
+            this.btn_saved.TabIndex = 15;
+            this.btn_saved.Text = "Confirmer";
+            this.btn_saved.UseVisualStyleBackColor = false;
+            this.btn_saved.Click += new System.EventHandler(this.btn_saved_Click);
+            // 
+            // btn_anuller
+            // 
+            this.btn_anuller.BackColor = System.Drawing.Color.SlateBlue;
+            this.btn_anuller.Font = new System.Drawing.Font("Microsoft Uighur", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_anuller.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btn_anuller.Location = new System.Drawing.Point(620, 327);
+            this.btn_anuller.Name = "btn_anuller";
+            this.btn_anuller.Size = new System.Drawing.Size(106, 38);
+            this.btn_anuller.TabIndex = 16;
+            this.btn_anuller.Text = "Annuler";
+            this.btn_anuller.UseVisualStyleBackColor = false;
+            this.btn_anuller.Click += new System.EventHandler(this.btn_anuller_Click);
+            // 
             // Form1
             // 
             this.AccessibleRole = System.Windows.Forms.AccessibleRole.Alert;
@@ -223,6 +253,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btn_anuller);
+            this.Controls.Add(this.btn_saved);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.input_nom);
             this.Controls.Add(this.input_prenom);
@@ -265,6 +297,8 @@
         private System.Windows.Forms.TextBox input_prenom;
         private System.Windows.Forms.TextBox input_nom;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btn_saved;
+        private System.Windows.Forms.Button btn_anuller;
     }
 }
 
